@@ -22,9 +22,7 @@ const useDimensionsListener = () => {
     }
 
     Dimensions.addEventListener("change", handleDimensionChange);
-    return () => {
-      Dimensions.removeEventListener("change", handleDimensionChange);
-    };
+    return () => {};
   }, []);
 
   return {
